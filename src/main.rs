@@ -86,8 +86,8 @@ impl State {
     fn main_menu(&mut self, ctx: &mut BTerm) {
         ctx.cls();
         ctx.print_centered(5, "Welcome to Flappy Dragon");
-        ctx.print_centered(8, "(P) Play");
-        ctx.print_centered(9, "(Q) Quit");
+        ctx.print_centered(8, "(P)lay");
+        ctx.print_centered(9, "(Q)uit");
 
         if let Some(key) = ctx.key {
             match key {
@@ -101,8 +101,8 @@ impl State {
     fn dead(&mut self, ctx: &mut BTerm) {
         ctx.cls();
         ctx.print_centered(5, "You are dead!");
-        ctx.print_centered(8, "(P) Play");
-        ctx.print_centered(9, "(Q) Quit");
+        ctx.print_centered(8, "(P)lay");
+        ctx.print_centered(9, "(Q)uit");
 
         if let Some(key) = ctx.key {
             match key {
